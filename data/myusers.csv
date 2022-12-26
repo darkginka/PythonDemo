@@ -1,0 +1,5 @@
+,_id,name,email,dob,mobile,password,address,gender,course,courseyear
+0,635e6a9e9cb356abfd457e0e,Rohan Thakur,b4.rohan@gmail.com,03/12/1999,9702616558,rohan123,"{'state': 'Maharashtra', 'disctict': 'Raigad', 'taluka': 'Uran', 'pin': '410206'}",male,,
+1,635f72cd4c59ed864e728bfb,Nidhi Khandelwal,nidhi@gmail.com,12/10/1989,{'$numberLong': '1234567890'},nidhi234,"{'state': 'Maharashtra', 'disctict': 'thane', 'taluka': 'thame', 'pin': '400206'}",female,,
+2,635f7847f1e7a6c9b9fe330f,Aniket,aniket@gmail.com,10/12/1889,{'$numberLong': '1234567890'},ani1245,"{'state': 'maharashtra', 'disctict': 'raigad', 'taluka': 'panvel', 'pin': '123445'}",male,,
+3,63649782b723217d960df6af,Rohan,rohanthakur@gmail.com,10/12/1889,{'$numberLong': '1234567890'},ani1245,"{'state': 'maharashtra', 'disctict': 'raigad'}",male,B.Ed,First

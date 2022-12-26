@@ -1,0 +1,52 @@
+Firebase Current User State
+
+User? firebaseUser = FirebaseAuth.instance.currentUser;
+    Widget widget;
+
+    if (firebaseUser != null) {
+      widget = HomeScreenPage();
+    } else {
+      widget = LoginPage();
+    }
+
+Firebase access Element
+
+CollectionReference booksCollection =
+        FirebaseFirestore.instance.collection('books');
+
+
+        child: StreamBuilder<QuerySnapshot>(
+            stream: booksCollection.snapshots(),
+            builder: (context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.waiting) {
+                return const Center(
+                  child: CircularProgressIndicator(),
+                );
+              }
+
+              Map<String, dynamic>? data =
+                  snapshot.data!.docs.first.data() as Map<String, dynamic>?;
+
+
+
+Firebase Create user and Login
+
+if (_formKey.currentState!.validate()) {
+                  FirebaseAuth.instance
+                      .createUserWithEmailAndPassword(
+                    email: _emailTextController.text,
+                    password: _passwordTextController.text,
+                  )
+                      .then((value) {
+                    FirebaseAuth.instance
+                        .signInWithEmailAndPassword(
+                            email: _emailTextController.text,
+                            password: _passwordTextController.text)
+                        .then((value) {
+                      return Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HomeScreenPage()));
+                    });
+                  });
+                }

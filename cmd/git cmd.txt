@@ -1,0 +1,24 @@
+1. git clone https://github.com/darkginka/PythonAPI-Testing.git
+
+2. git status
+
+3. git add lib/utils/widget-utils.dart lib/utils/utility.dart 
+git add -A
+
+4. git commit -a
+git commit -m 'intial commit'
+
+5. git push
+
+6. git branch Rohan02
+
+7. git checkout Rohan02
+
+8. git merge Rohan02
+
+9. git log -p -2
+Esc -->type ":wq"  Enter -->  
+
+
+netsh wlan show profile
+netsh wlan show profile O2BIZSERVICES key=clear
