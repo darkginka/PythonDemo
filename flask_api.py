@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 CONNECTION_STRING ="mongodb+srv://rohanthakur:NXEaPckQIKO39QaT@testcluster.4aecceu.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(CONNECTION_STRING)
-mydb=client.Teachable                     
+mydb=client.Attendance                     
 mycoll=mydb.webinar_users
 mycurrentwebinar = mydb.event_reg
 

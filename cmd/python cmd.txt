@@ -1,3 +1,0 @@
-python app_name.py
-pip install Libriryname
-C:\Users\rohan\AppData\Local\Programs\Python\Python310
